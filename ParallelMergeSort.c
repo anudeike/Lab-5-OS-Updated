@@ -53,14 +53,7 @@ void merge(int low, int mid, int high){
     int k = low;  
     i = j = 0; 
   
-    // merge left and right in ascending order 
-    while (i < n1 && j < n2) { 
-        if (left[i] <= right[j]) 
-            array[k++] = left[i++]; 
-        else
-            array[k++] = right[j++]; 
-    } 
-  
+    
     // insert remaining values from left 
     while (i < n1) { 
         array[k++] = left[i++]; 
